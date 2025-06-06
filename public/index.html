@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confeitaria VanessaSoares</title>
+  <link rel="stylesheet" href="home.css" />
+  <meta http-equiv="Cache-Control" content="no-store" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/eedbcd0c96.js" crossorigin="anonymous"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage.js"></script>
+
+</head>
+
+<body>
+  <section id="header">
+    <div class="logo">
+      <a href="#" onclick="window.location.href='index.html';">
+        <img src="imgs/VanessaSoares.png" alt="" class="imglogo" />
+      </a>
+    </div>
+
+    <div>
+      <ul id="navbar">
+        <li>
+          <a href="index.html" class="active">Início</a>
+        </li>
+
+        <li>
+          <a href="loja.html">Cardápio</a>
+        </li>
+
+        <li>
+          <a href="sobre.html">Sobre nós</a>
+        </li>
+
+        <li>
+          <a href="login.html">Admin</a>
+        </li>
+
+        <li>
+          <a href="upload.html" class="active">Cadastro</a>
+        </li>
+
+        <div class="js-shop-quantity pro-quantity"></div>
+        <li>
+          <i id="shopbag" class="fa-sharp fa-solid fa-cart-shopping js-cart-click"></i>
+        </li>
+        <a href="#" id="close" onclick="remove()"><i class="fa-solid fa-xmark"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <div class="js-shop-quantity pro-quantity"></div>
+      <i class="fa-sharp fa-solid fa-cart-shopping js-cart-click"></i>
+      <i id="bar" class="fas fa-outdent" onclick="show()"></i>
+    </div>
+  </section>
+
+  <section id="secao1">
+    <h4>Vanessa Soares Confeitaria</h4>
+    <h2>Bolos e Doces</h2>
+    <h1>Do jeitinho que você gosta!!!</h1>
+    <p>Venha conhecer nossos Produtos.</p>
+    <button>Compre agora</button>
+  </section>
+
+
+
+  <section id="produto1" class="secao-p1">
+    <h2>OS MAIS VENDIDOS</h2>
+    <p>Bolos deliciosos a preços acessíveis</p>
+    <div class="pro-cont js-pro-cont"></div>
+  </section>
+
+  <section id="banner">
+    <h2>Delicias da casa</h2>
+
+  </section>
+
+
+  <section id="banner3" class="secao-p1">
+    <div class="bannerbox">
+      <h2>Cupcakes</h2>
+      <h3>Cupcakes do sabor que preferir</h3>
+    </div>
+
+    <div class="bannerbox">
+      <h2>Donuts</h2>
+      <h3>Saborosos Donuts</h3>
+    </div>
+
+    <div class="bannerbox">
+      <h2>Brownies</h2>
+      <h3>Delicioso Brownies de chocolate</h3>
+    </div>
+  </section>
+
+  <section id="informativo">
+
+  </section>
+
+
+
+  <script src="scripts/cart.js"></script>
+  <script src="scripts/products.js"></script>
+  <script src="home.js"></script>
+
+  <script type="module">
+
+    // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDlWe79DAUvtEZ-YKi7VxpCOfT38k9WHLM",
+  authDomain: "vsconfefitaria.firebaseapp.com",
+  projectId: "vsconfefitaria",
+  storageBucket: "vsconfefitaria.firebasestorage.app",
+  messagingSenderId: "25620274794",
+  appId: "1:25620274794:web:3851f983c9ed49f9ae7413"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+  </script>
+</body>
+
+</html>

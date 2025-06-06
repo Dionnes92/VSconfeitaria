@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="upload.css">
+
+  <title>Upload de Produtos</title>
+</head>
+<body>
+  <h2>Adicionar Novo Produto</h2>
+  <form id="upload-form" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Nome do produto" required><br>
+    <input type="number" name="price" placeholder="Preço" required><br>
+    <input type="text" name="name" placeholder="Descrição do produto" required><br>
+    <input type="file" name="image" accept="image/*" required><br>
+    
+    <button type="submit">Salvar</button>
+  </form>
+
+  <script>
+    document.getElementById('upload-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+  
+      const response = await fetch('http://localhost:3000/upload', {
+        method: 'POST',
+        body: formData
+      });
+  
+      const result = await response.json();
+      alert(result.message);
+    });
+  </script>
+  
+</body>
+</html>

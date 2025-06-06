@@ -1,0 +1,56 @@
+body {
+    background-color: #f5f0fa;
+    font-family: Arial, sans-serif;
+    color: #4a0072;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  h2 {
+    color: #6a1b9a;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(106, 27, 154, 0.2);
+    padding: 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="file"],
+  button {
+    padding: 10px;
+    border: 1px solid #d1c4e9;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="file"]:focus {
+    outline: none;
+    border-color: #ab47bc;
+    box-shadow: 0 0 5px rgba(171, 71, 188, 0.5);
+  }
+  
+  button {
+    background-color: #ab47bc;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #8e24aa;
+  }
+  

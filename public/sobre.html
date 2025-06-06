@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <script
+      src="https://kit.fontawesome.com/eedbcd0c96.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="header">
+        <div class="logo">
+          <a href="#" onclick="window.location.href='index.html';">
+            <img src="imgs/VanessaSoares.png" alt="" class="imglogo" />
+          </a>
+        </div>
+  
+        <div>
+          <ul id="navbar">
+            <li>
+              <a href="index.html">Início</a>
+            </li>
+  
+            <li>
+              <a href="loja.html">Cardápio</a>
+            </li>
+  
+            <li>
+              <a href="sobre.html" class="active">sobre</a>
+            </li>
+  
+            <div class="js-shop-quantity pro-quantity"></div>
+            <li>
+              <i
+                id="shopbag"
+                class="fa-sharp fa-solid fa-cart-shopping js-cart-click"
+              ></i>
+            </li>
+            <a href="#" id="close" onclick="remove()"
+              ><i class="fa-solid fa-xmark"></i
+            ></a>
+          </ul>
+        </div>
+        <div id="mobile">
+          <div class="js-shop-quantity pro-quantity"></div>
+          <i class="fa-sharp fa-solid fa-cart-shopping js-cart-click"></i>
+          <i id="bar" class="fas fa-outdent" onclick="show()"></i>
+        </div>
+    </section>
+
+    <section id="pageheader" class="aboutheader">
+      <h2>#Delicias Da Vanessa Soares Confeitaria</h2>
+      <p> Descubra a História por Trás da Nossa Loja de Bolos</p>
+    </section>
+
+    <div id="aboutdiv" class="secao-p1">
+      <img src="imgs/about.jpeg" alt="" />
+      <div>
+        <h2>Quem Somos ?</h2>
+        <p>
+           A ConfeitariaVanessaSoaresSJS é um sonho que tenho de trabalhar com bolos e doces em geral,
+           estou sempre apredendo e descobrindo algo novo que sempre surge uma nova decoração, um novo estilo de bolo.
+        </p>
+
+        <marquee behavior="" direction=""
+          >confeitariavanessasoaressjs</marquee
+        >
+      </div>
+    </div>
+
+   
+    <section id="informativo">
+  
+    </section>
+   
+
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/products.js"></script>
+    <script src="home.js"></script>
+  </body>
+</html>
